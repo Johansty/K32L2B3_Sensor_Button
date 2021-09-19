@@ -69,14 +69,14 @@ int main(void) {
     		lptmr0_ticks=0;
     		 estado1 = leerBoton1();
     		 estado2 = leerBoton2();
-    		 if (estado1!=false){
+    		 if (estado1!=true){
 
     			 temperature_value=getTemperatureValue();
     			 printf("Temperatura: %f\r\n", temperature_value);
     			  printf("\r\n");
     		 }
 
-    		 if (estado2!=false){
+    		 if (estado2!=true){
 
     			 light_value=getLightADC();
     			 printf("Light (LUX): %d\r\n", light_value);
